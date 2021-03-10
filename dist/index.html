@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Testing Fabric.JS</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Canvas with fabric.js</h1>
+      <div class="canvas-main">
+        <canvas id="canvas"></canvas>
+        <div class="canvas-options">
+          <label for="height">
+            Height:
+            <input type="number" name="height" id="height" />
+          </label>
+          <label for="width">
+            Width:
+            <input type="number" name="width" id="width" />
+          </label>
+          <label for="image">
+            Add Image
+            <input type="file" name="image" id="image" accept="image/*" />
+          </label>
+          <label for="bgImage">
+            Add Background Image
+            <input type="file" name="bgImage" id="bgImage" accept="image/*" />
+          </label>
+          <label for="color">
+            Set Color
+            <input type="color" name="color" id="color" />
+          </label>
+          <label for="bgColor">
+            Set Background Color
+            <input type="color" name="bgColor" id="bgColor" />
+          </label>
+          <div class="font-options">
+            <select name="fontFamily" id="fontFamily">
+              <option value="Times New Roman" selected>
+                'Times New Roman'
+              </option>
+              <option value="Arial">Arial</option>
+              <option value="Courier New">Courier New</option>
+              <option value="Verdana">Verdana</option>
+              <option value="Tahoma">Tahoma</option>
+            </select>
+
+            <select name="fontSize" id="fontSize">
+              <option value="8">8</option>
+              <option value="10">10</option>
+              <option value="12">12</option>
+              <option value="14">14</option>
+              <option value="16">16</option>
+              <option value="18">18</option>
+              <option value="20">20</option>
+              <option value="24" selected>24</option>
+              <option value="28">28</option>
+              <option value="32">32</option>
+              <option value="40">40</option>
+              <option value="50">50</option>
+              <option value="64">64</option>
+            </select>
+          </div>
+
+          <button type="button" id="moveBgBtn">Przesuwania tła</button>
+          <button id="addRect">Add Rectangle</button>
+          <button id="addCircle">Add Circle</button>
+          <button id="addText">Add Text</button>
+          <button id="center">Center Object</button>
+          <button id="moveFront">Move Front</button>
+          <button id="moveBack">Move Back</button>
+          <button id="lockMovement">Lock Element</button>
+          <button class="delete" id="delete">Remove Element</button>
+          <button id="clearCanvas">Clear Canvas</button>
+          <button id="save">Save to LocalStorage</button>
+          <button id="fromStorage">Restore from LocalStorage</button>
+          <button id="export">Export to Image</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="bundle.js"></script>
+  </body>
+</html>

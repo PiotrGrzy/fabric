@@ -1,0 +1,41 @@
+body {
+  background-color: #333;
+  color: azure;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.canvas-container {
+  flex: 2;
+}
+.canvas-main {
+  display: flex;
+  min-height: 800px;
+}
+
+.canvas-options {
+  flex: 1;
+  display: grid;
+}
+
+button {
+  font-size: 18px;
+}
+
+button.active {
+  background-color: green;
+}
+
+button.delete {
+  color: #c74646;
+}
+
+select {
+  display: inline-block;
+  margin: 5px 0;
+  padding: 5px;
+  font-size: 18px;
+}
